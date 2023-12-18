@@ -14,16 +14,12 @@ namespace ConsoleApp5
             // Лабораторная Работа №4
             Console.Write("Введите X=");
             double x = double.Parse(Console.ReadLine());
-
-            int A = 10;
-            double y = 0;
-
+            double result = 0;
             for (int k = 1; k <= 11; k++)
             {
-                y += k * Pow(x, A);
-                A--;
+                result += k * Pow(x, 11 - k);
             }
-            Console.WriteLine($"Ответ: y = {y}");
+            Console.WriteLine($"Ответ: {result}");
         }
     }
 }
