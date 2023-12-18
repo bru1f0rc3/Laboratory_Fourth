@@ -15,15 +15,16 @@ namespace ConsoleApp5
             Console.Write("Введите X=");
             double x = double.Parse(Console.ReadLine());
 
-            int power = 10;
+            int A = 10;
             double y = 0;
 
             for (int k = 1; k <= 11; k++)
             {
-                y += k * Pow(x, power);
-                power--;
+                y += k * Pow(x, A);
+                A--;
             }
             Console.WriteLine($"Ответ: y = {y}");
         }
     }
 }
+
